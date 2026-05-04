@@ -32,7 +32,6 @@ Estudiante de Desarrollo de Aplicaciones
 | Ionicons | 7.x | Biblioteca de iconos |
 
 ## 📁 Estructura del Proyecto
-## 📁 Estructura del Proyecto
 
 ```
 src/
