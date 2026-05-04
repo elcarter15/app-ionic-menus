@@ -32,9 +32,6 @@ Estudiante de Desarrollo de Aplicaciones
 | Ionicons | 7.x | Biblioteca de iconos |
 
 ## 📁 Estructura del Proyecto
-## 📁 Estructura del Proyecto
-
-```
 src/
 ├── app/
 │   ├── pages/
@@ -74,7 +71,7 @@ src/
 
 ### Pasos para ejecutar la aplicación
 
-```bash
+```
 # 1. Clonar o descargar el proyecto
 cd app-menus
 
@@ -100,10 +97,11 @@ npx cap sync android
 npx cap open android
 
 # 5. En Android Studio: Build → Build Bundle(s) / APK(s) → Build APK(s)
-
+```
 🎨 Características Implementadas
 
 Funcionalidades
+
 ✅ Menú lateral con 3 opciones de navegación
 
 ✅ Cierre automático del menú al seleccionar una opción
@@ -121,13 +119,17 @@ Funcionalidades
 ✅ Diseño responsivo
 
 Interfaz de Usuario
+
 Página	Elementos
+
 Inicio	Avatar, tarjetas de estadísticas, características, consejo del día
+
 Información Personal	Avatar, formulario (nombre, edad, correo), botón guardar, tarjeta de confirmación
+
 Contacto	Avatar, lista de contacto con iconos (correo, GitHub, teléfono), botón enviar correo
 
 🐛 Errores Conocidos y Soluciones
-
+```
 Error: Iconos de GitHub y teléfono no aparecen
 Causa: En Ionic con Standalone Components, los iconos deben registrarse manualmente.
 
@@ -137,10 +139,11 @@ import { addIcons } from 'ionicons';
 import { logoGithub, callOutline } from 'ionicons/icons';
 
 constructor() {
-  addIcons({ 'logo-github': logoGithub, 'call-outline': callOutline });
+addIcons({ 'logo-github': logoGithub, 'call-outline': callOutline });
 }
 
 Error: "ion-avatar is not a known element"
+```
 Causa: Falta importar el componente en la página.
 
 Solución: Agregar IonAvatar al array imports del componente.
