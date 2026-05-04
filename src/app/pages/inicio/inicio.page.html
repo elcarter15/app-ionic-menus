@@ -1,0 +1,90 @@
+<!-- src/app/pages/inicio/inicio.page.html -->
+<!-- Versión simple con HTML puro (no requiere imports adicionales) -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <!-- Sección del héroe -->
+  <div class="hero-section">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-avatar">
+          <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar">
+        </div>
+        <h1>Bienvenido, <span class="highlight">Yimi Cardozo</span></h1>
+        <p>Evaluación de Desarrollo</p>
+        <p>La aplicación Ionic está lista para brillar</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjetas de estadísticas con CSS Grid -->
+  <div class="stats-container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">⚡</div>
+        <h2 class="stat-number">Ionic</h2>
+        <p class="stat-label">Framework</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🅰️</div>
+        <h2 class="stat-number">Angular</h2>
+        <p class="stat-label">Frontend</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📱</div>
+        <h2 class="stat-number">Cross</h2>
+        <p class="stat-label">Platform</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🚀</div>
+        <h2 class="stat-number">100%</h2>
+        <p class="stat-label">Listo</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tarjeta de características -->
+  <div class="features-card">
+    <div class="features-header">
+      <h2>✨ Características de la app</h2>
+      <p>Lo que puedes hacer</p>
+    </div>
+    <div class="features-list">
+      <div class="feature-item">
+        <span class="feature-icon">☰</span>
+        <span>Menú lateral con 3 secciones</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">👤</span>
+        <span>Información personal con formulario</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">✉️</span>
+        <span>Contacto directo por correo</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">💾</span>
+        <span>Almacenamiento temporal de datos</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consejo del día -->
+  <div class="tip-card">
+    <div class="tip-header">
+      <span class="tip-icon">💡</span>
+      <h3>Consejo del día</h3>
+    </div>
+    <p>¿Sabías que puedes generar un APK para Android con <strong>Ionic Capacitor</strong>? Ejecuta <code>ionic build --prod</code> y luego <code>npx cap sync android</code>.</p>
+  </div>
+
+</ion-content>

@@ -1,0 +1,57 @@
+<!-- src/app/pages/contacto/contacto.page.html -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contacto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="contenido-contacto">
+    <ion-avatar class="avatar">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar">
+    </ion-avatar>
+    
+    <h2>Desarrollador: Yimi J. Cardozo R.</h2>
+    <p>Estudiante de Desarrollo de Aplicaciones</p>
+    
+    <ion-list class="contacto-lista">
+      
+      <!-- Icono de correo -->
+      <ion-item>
+        <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+        <ion-label>yimicardozo15@gmail.com</ion-label>
+      </ion-item>
+      
+      <!-- Icono de GitHub (logo-github) -->
+      <ion-item>
+        <ion-icon name="logo-github" slot="start" color="dark"></ion-icon>
+        <ion-label>github.com/elcarter15</ion-label>
+      </ion-item>
+      
+      <!-- Icono de teléfono -->
+      <ion-item>
+        <ion-icon name="call-outline" slot="start" color="success"></ion-icon>
+        <ion-label>+584167193969</ion-label>
+      </ion-item>
+      
+    </ion-list>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>¿Dudas o consultas?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block" (click)="enviarCorreo()" color="primary">
+          <ion-icon name="send-outline" slot="start"></ion-icon>
+          Enviar correo
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

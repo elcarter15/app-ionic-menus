@@ -1,0 +1,39 @@
+<!-- src/app/app.component.html -->
+<!-- Autor: [Tu nombre] -->
+<!-- El menú se cierra automáticamente al seleccionar una opción -->
+
+<ion-app>
+  <!-- MENÚ LATERAL -->
+  <ion-menu menuId="first" contentId="main-content" #menu>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Mi Aplicación</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content>
+      <ion-list>
+        <!-- Opción 1: Inicio - Cierra el menú al hacer clic -->
+        <ion-item routerLink="/inicio" routerDirection="root" (click)="menu.close()">
+          <ion-icon name="home-outline" slot="start"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+
+        <!-- Opción 2: Información Personal - Cierra el menú al hacer clic -->
+        <ion-item routerLink="/informacion-personal" routerDirection="root" (click)="menu.close()">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>Información personal</ion-label>
+        </ion-item>
+
+        <!-- Opción 3: Contacto - Cierra el menú al hacer clic -->
+        <ion-item routerLink="/contacto" routerDirection="root" (click)="menu.close()">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-label>Contacto</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

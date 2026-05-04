@@ -1,0 +1,138 @@
+/* src/app/pages/informacion-personal/informacion-personal.page.scss */
+/* Autor: Yimi J. Cardozo R. */
+/* Estilo consistente con la página de Contacto */
+
+.contenido-informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border: 3px solid var(--ion-color-primary);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 16px 0 8px 0;
+  color: #e0e0e0;
+}
+
+p {
+  color: #aaaaaa;
+  margin-bottom: 24px;
+}
+
+.formulario-lista {
+  width: 100%;
+  background: transparent;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.formulario-lista ion-item {
+  --background: #242424;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --inner-padding-end: 0;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  --border-radius: 12px;
+}
+
+.formulario-lista ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.formulario-lista ion-label {
+  font-weight: 600;
+  color: #aaaaaa;
+  margin-bottom: 4px;
+}
+
+.formulario-lista ion-input {
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --padding-start: 0;
+  color: #e0e0e0;
+}
+
+.formulario-lista ion-input::placeholder {
+  color: #666666;
+}
+
+/* Tarjetas de acción */
+ion-card {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 16px;
+  background: #242424;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ion-card-header {
+  padding-bottom: 8px;
+}
+
+ion-card-title {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+ion-button {
+  --border-radius: 12px;
+  height: 48px;
+  font-weight: 600;
+}
+
+/* Tarjeta de información guardada */
+.info-guardada {
+  margin-top: 20px;
+  border-left: 4px solid #2ecc71;
+  background: #1a3a2a;
+}
+
+.info-guardada ion-card-title {
+  color: #2ecc71;
+}
+
+.datos-guardados {
+  background: transparent;
+  width: 100%;
+}
+
+.datos-guardados ion-item {
+  --background: transparent;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 12px;
+  border: none;
+}
+
+.datos-guardados ion-icon {
+  font-size: 20px;
+}
+
+.datos-guardados ion-label {
+  color: #cccccc;
+  text-align: left;
+}
+
+.datos-guardados strong {
+  color: #e0e0e0;
+  margin-right: 8px;
+}
