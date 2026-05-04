@@ -73,7 +73,7 @@ src/
 
 ### Pasos para ejecutar la aplicación
 
-```b
+```
 # 1. Clonar o descargar el proyecto
 cd app-menus
 
@@ -99,7 +99,7 @@ npx cap sync android
 npx cap open android
 
 # 5. En Android Studio: Build → Build Bundle(s) / APK(s) → Build APK(s)
-
+```
 🎨 Características Implementadas
 
 Funcionalidades
@@ -131,8 +131,7 @@ Información Personal	Avatar, formulario (nombre, edad, correo), botón guardar,
 Contacto	Avatar, lista de contacto con iconos (correo, GitHub, teléfono), botón enviar correo
 
 🐛 Errores Conocidos y Soluciones
-
-
+```
 Error: Iconos de GitHub y teléfono no aparecen
 Causa: En Ionic con Standalone Components, los iconos deben registrarse manualmente.
 
@@ -146,8 +145,7 @@ addIcons({ 'logo-github': logoGithub, 'call-outline': callOutline });
 }
 
 Error: "ion-avatar is not a known element"
-
-
+```
 Causa: Falta importar el componente en la página.
 
 Solución: Agregar IonAvatar al array imports del componente.
