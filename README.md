@@ -32,27 +32,36 @@ Estudiante de Desarrollo de Aplicaciones
 | Ionicons | 7.x | Biblioteca de iconos |
 
 ## 📁 Estructura del Proyecto
+## 📁 Estructura del Proyecto
+
+```
 src/
 ├── app/
-│ ├── pages/
-│ │ ├── inicio/ # Página de inicio
-│ │ │ ├── inicio.page.ts
-│ │ │ ├── inicio.page.html
-│ │ │ └── inicio.page.scss
-│ │ ├── informacion-personal/ # Formulario personal
-│ │ │ ├── informacion-personal.page.ts
-│ │ │ ├── informacion-personal.page.html
-│ │ │ └── informacion-personal.page.scss
-│ │ └── contacto/ # Página de contacto
-│ │ ├── contacto.page.ts
-│ │ ├── contacto.page.html
-│ │ └── contacto.page.scss
-│ ├── app.component.ts # Componente principal con menú
-│ ├── app.component.html # Plantilla del menú lateral
-│ └── app.routes.ts # Configuración de rutas
+│   ├── pages/
+│   │   ├── inicio/               # Página de inicio
+│   │   │   ├── inicio.page.ts
+│   │   │   ├── inicio.page.html
+│   │   │   └── inicio.page.scss
+│   │   │
+│   │   ├── informacion-personal/ # Formulario personal
+│   │   │   ├── informacion-personal.page.ts
+│   │   │   ├── informacion-personal.page.html
+│   │   │   └── informacion-personal.page.scss
+│   │   │
+│   │   └── contacto/             # Página de contacto
+│   │       ├── contacto.page.ts
+│   │       ├── contacto.page.html
+│   │       └── contacto.page.scss
+│   │
+│   ├── app.component.ts          # Componente principal con menú
+│   ├── app.component.html        # Plantilla del menú lateral
+│   └── app.routes.ts             # Configuración de rutas
+│
 ├── theme/
-│ └── variables.scss # Variables de tema oscuro
-└── index.html # Punto de entrada
+│   └── variables.scss            # Variables de tema oscuro
+│
+└── index.html                    # Punto de entrada
+```
 
 
 ## 🚀 Instalación y Ejecución
