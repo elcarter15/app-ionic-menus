@@ -121,19 +121,23 @@ Funcionalidades
 ✅ Diseño responsivo
 
 Interfaz de Usuario
+
 Página	Elementos
+
 Inicio	Avatar, tarjetas de estadísticas, características, consejo del día
+
 Información Personal	Avatar, formulario (nombre, edad, correo), botón guardar, tarjeta de confirmación
+
 Contacto	Avatar, lista de contacto con iconos (correo, GitHub, teléfono), botón enviar correo
 
 🐛 Errores Conocidos y Soluciones
 
+```bash
 Error: Iconos de GitHub y teléfono no aparecen
 Causa: En Ionic con Standalone Components, los iconos deben registrarse manualmente.
 
 Solución: Importar y registrar iconos en el constructor:
 
-```
 import { addIcons } from 'ionicons';
 import { logoGithub, callOutline } from 'ionicons/icons';
 
@@ -142,7 +146,8 @@ constructor() {
 }
 
 Error: "ion-avatar is not a known element"
-```
+```bash
+
 Causa: Falta importar el componente en la página.
 
 Solución: Agregar IonAvatar al array imports del componente.
