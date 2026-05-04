@@ -73,7 +73,7 @@ src/
 
 ### Pasos para ejecutar la aplicación
 
-```bash
+```b
 # 1. Clonar o descargar el proyecto
 cd app-menus
 
@@ -132,7 +132,7 @@ Contacto	Avatar, lista de contacto con iconos (correo, GitHub, teléfono), botó
 
 🐛 Errores Conocidos y Soluciones
 
-```bash
+
 Error: Iconos de GitHub y teléfono no aparecen
 Causa: En Ionic con Standalone Components, los iconos deben registrarse manualmente.
 
@@ -142,11 +142,11 @@ import { addIcons } from 'ionicons';
 import { logoGithub, callOutline } from 'ionicons/icons';
 
 constructor() {
-  addIcons({ 'logo-github': logoGithub, 'call-outline': callOutline });
+addIcons({ 'logo-github': logoGithub, 'call-outline': callOutline });
 }
 
 Error: "ion-avatar is not a known element"
-```bash
+
 
 Causa: Falta importar el componente en la página.
 
