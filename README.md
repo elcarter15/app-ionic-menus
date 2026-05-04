@@ -152,15 +152,19 @@ Solución: Agregar IonAvatar al array imports del componente.
 ## 📸 Capturas de Pantalla
 
 ### 🍔 Menú Lateral
+
 ![Menú Lateral](screenshots/menu.png)
 
 ### 🏠 Página de Inicio
+
 ![Página de Inicio](screenshots/inicio.png)
 
 ### 👤 Página de Información Personal
+
 ![Información Personal](screenshots/informacion-personal.png)
 
 ### 📞 Página de Contacto
+
 ![Contacto](screenshots/contacto.png)
 
 🔄 Versiones
