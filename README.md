@@ -151,7 +151,7 @@ Solución: Agregar IonAvatar al array imports del componente.
 
 ## 📸 Capturas de Pantalla
 
-### 🍔 Menú Lateral
+### ☰ Menú Lateral
 
 ![Menú Lateral](screenshots/menu.png)
 
