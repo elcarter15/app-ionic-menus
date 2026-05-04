@@ -149,23 +149,19 @@ Causa: Falta importar el componente en la página.
 
 Solución: Agregar IonAvatar al array imports del componente.
 
-## 📸 Capturas de Pantalla
+📊 Capturas de Pantalla
 
-☰ Menú Lateral 
+Menú Lateral
+https://screenshots/menu.png
 
-![Menú Lateral](screenshots/menu.png)
+Página de Inicio
+https://screenshots/inicio.png
 
-### 🏠 Página de Inicio
+Página de Información Personal
+https://screenshots/informacion-personal.png
 
-![Página de Inicio](screenshots/inicio.png)
-
-### 👤 Página de Información Personal
-
-![Información Personal](screenshots/informacion-personal.png)
-
-### 📞 Página de Contacto
-
-![Contacto](screenshots/contacto.png)
+Página de Contacto
+https://screenshots/contacto.png
 
 🔄 Versiones
 
