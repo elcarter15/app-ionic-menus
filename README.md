@@ -103,6 +103,7 @@ npx cap open android
 🎨 Características Implementadas
 
 Funcionalidades
+
 ✅ Menú lateral con 3 opciones de navegación
 
 ✅ Cierre automático del menú al seleccionar una opción
@@ -132,6 +133,7 @@ Causa: En Ionic con Standalone Components, los iconos deben registrarse manualme
 
 Solución: Importar y registrar iconos en el constructor:
 
+```
 import { addIcons } from 'ionicons';
 import { logoGithub, callOutline } from 'ionicons/icons';
 
@@ -140,6 +142,7 @@ constructor() {
 }
 
 Error: "ion-avatar is not a known element"
+```
 Causa: Falta importar el componente en la página.
 
 Solución: Agregar IonAvatar al array imports del componente.
