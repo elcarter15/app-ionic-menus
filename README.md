@@ -54,6 +54,42 @@ src/
 │ └── variables.scss # Variables de tema oscuro
 └── index.html # Punto de entrada
 
+app-ionic-menus/
+│
+├── src/
+│ ├── app/
+│ │ ├── pages/
+│ │ │ │
+│ │ │ ├── inicio/
+│ │ │ │ ├── inicio.page.ts
+│ │ │ │ ├── inicio.page.html
+│ │ │ │ └── inicio.page.scss
+│ │ │ │
+│ │ │ ├── informacion-personal/
+│ │ │ │ ├── informacion-personal.page.ts
+│ │ │ │ ├── informacion-personal.page.html
+│ │ │ │ └── informacion-personal.page.scss
+│ │ │ │
+│ │ │ └── contacto/
+│ │ │ ├── contacto.page.ts
+│ │ │ ├── contacto.page.html
+│ │ │ └── contacto.page.scss
+│ │ │
+│ │ ├── app.component.ts
+│ │ ├── app.component.html
+│ │ └── app.routes.ts
+│ │
+│ ├── theme/
+│ │ └── variables.scss
+│ │
+│ └── index.html
+│
+├── angular.json
+├── package.json
+├── ionic.config.json
+├── .gitignore
+└── README.md
+
 
 ## 🚀 Instalación y Ejecución
 
