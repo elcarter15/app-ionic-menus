@@ -35,3 +35,90 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+/* src/global.scss */
+/* Estilos personalizados para el toast centrado y animado */
+
+.toast-centrado {
+  --border-radius: 16px;
+  --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Animación de entrada (desde arriba) */
+.toast-animado {
+  animation: slideInDown 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+/* Animación de entrada (desde abajo) - alternativa */
+.toast-animado-bottom {
+  animation: slideInUp 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+/* Animación de entrada (fade) - alternativa */
+.toast-animado-fade {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Definición de las animaciones */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* src/global.scss */
+/* Estilos globales de la aplicación */
+
+@import "./theme/variables.scss";
+
+/* Tus estilos personalizados aquí */
+.toast-centrado {
+  --border-radius: 16px;
+  --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-align: center;
+}
+
+.toast-animado {
+  animation: slideInDown 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
