@@ -1,4 +1,6 @@
 <!-- src/app/pages/contacto/contacto.page.html -->
+<!-- Autor: Yimi J. Cardozo R. -->
+<!-- Descripción: Formulario de contacto con ventana flotante y limpieza automática -->
 
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
@@ -10,48 +12,60 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  
   <div class="contenido-contacto">
+    
+    <!-- Avatar -->
     <ion-avatar class="avatar">
       <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar">
     </ion-avatar>
     
-    <h2>Desarrollador: Yimi J. Cardozo R.</h2>
-    <p>Estudiante de Desarrollo de Aplicaciones</p>
+    <h2>Formulario de Contacto</h2>
+    <p>Envíanos un mensaje y te responderemos pronto</p>
     
-    <ion-list class="contacto-lista">
+    <!-- Formulario -->
+    <ion-list class="formulario-contacto">
       
-      <!-- Icono de correo -->
+      <!-- Campo Nombre -->
       <ion-item>
-        <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
-        <ion-label>yimicardozo15@gmail.com</ion-label>
+        <ion-icon name="person-outline" slot="start" color="primary"></ion-icon>
+        <ion-label position="stacked">Nombre completo</ion-label>
+        <ion-input [(ngModel)]="contacto.nombre" placeholder="Tu nombre"></ion-input>
       </ion-item>
-      
-      <!-- Icono de GitHub (logo-github) -->
+
+      <!-- Campo Correo -->
       <ion-item>
-        <ion-icon name="logo-github" slot="start" color="dark"></ion-icon>
-        <ion-label>github.com/elcarter15</ion-label>
+        <ion-icon name="mail-outline" slot="start" color="secondary"></ion-icon>
+        <ion-label position="stacked">Correo electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="contacto.correo" placeholder="tucorreo@ejemplo.com"></ion-input>
       </ion-item>
-      
-      <!-- Icono de teléfono -->
+
+      <!-- Campo Mensaje -->
       <ion-item>
-        <ion-icon name="call-outline" slot="start" color="success"></ion-icon>
-        <ion-label>+584167193969</ion-label>
+        <ion-icon name="chatbubble-outline" slot="start" color="tertiary"></ion-icon>
+        <ion-label position="stacked">Mensaje</ion-label>
+        <ion-textarea [(ngModel)]="contacto.mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></ion-textarea>
       </ion-item>
       
     </ion-list>
 
-    <ion-card>
+    <!-- Botón Enviar -->
+    <ion-button expand="block" (click)="enviarFormulario()" color="primary">
+      <ion-icon name="send-outline" slot="start"></ion-icon>
+      Enviar mensaje
+    </ion-button>
+
+    <!-- Tarjeta de éxito (se muestra después de enviar) -->
+    <ion-card *ngIf="mostrarTarjetaExito" class="mensaje-exito">
       <ion-card-header>
-        <ion-card-title>¿Dudas o consultas?</ion-card-title>
+        <ion-card-title>✅ Mensaje enviado correctamente</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-button expand="block" (click)="enviarCorreo()" color="primary">
-          <ion-icon name="send-outline" slot="start"></ion-icon>
-          Enviar correo
-        </ion-button>
+        <p><strong>Nombre:</strong> {{ ultimoEnvio.nombre }}</p>
+        <p><strong>Correo:</strong> {{ ultimoEnvio.correo }}</p>
+        <p><strong>Mensaje:</strong> {{ ultimoEnvio.mensaje }}</p>
+        <p>Gracias por contactarnos, te responderemos pronto.</p>
       </ion-card-content>
     </ion-card>
-  </div>
 
+  </div>
 </ion-content>

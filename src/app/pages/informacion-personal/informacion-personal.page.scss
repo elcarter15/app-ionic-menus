@@ -1,33 +1,24 @@
 /* src/app/pages/informacion-personal/informacion-personal.page.scss */
 /* Autor: Yimi J. Cardozo R. */
-/* Estilo consistente con la página de Contacto */
+/* Estilos para la página de información personal */
 
 .contenido-informacion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .avatar {
   width: 100px;
   height: 100px;
   margin: 20px auto;
-  border: 3px solid var(--ion-color-primary);
   border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border: 3px solid var(--ion-color-primary);
 }
 
 h2 {
-  font-size: 1.3rem;
   margin: 16px 0 8px 0;
+  font-size: 1.3rem;
   color: #e0e0e0;
 }
 
@@ -39,7 +30,6 @@ p {
 .formulario-lista {
   width: 100%;
   background: transparent;
-  border-radius: 16px;
   margin-bottom: 20px;
 }
 
@@ -47,10 +37,8 @@ p {
   --background: #242424;
   --padding-start: 16px;
   --padding-end: 16px;
-  --inner-padding-end: 0;
   margin-bottom: 12px;
   border-radius: 12px;
-  --border-radius: 12px;
 }
 
 .formulario-lista ion-icon {
@@ -67,35 +55,12 @@ p {
 .formulario-lista ion-input {
   --padding-top: 8px;
   --padding-bottom: 8px;
-  --padding-start: 0;
-  color: #e0e0e0;
-}
-
-.formulario-lista ion-input::placeholder {
-  color: #666666;
-}
-
-/* Tarjetas de acción */
-ion-card {
-  width: 100%;
-  margin-top: 10px;
-  border-radius: 16px;
-  background: #242424;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-ion-card-header {
-  padding-bottom: 8px;
-}
-
-ion-card-title {
-  font-size: 1.1rem;
   color: #e0e0e0;
 }
 
 ion-button {
   --border-radius: 12px;
-  height: 48px;
+  height: 52px;
   font-weight: 600;
 }
 
@@ -104,10 +69,13 @@ ion-button {
   margin-top: 20px;
   border-left: 4px solid #2ecc71;
   background: #1a3a2a;
+  width: 100%;
+  animation: fadeInUp 0.5s ease-out;
 }
 
 .info-guardada ion-card-title {
   color: #2ecc71;
+  font-size: 1rem;
 }
 
 .datos-guardados {
@@ -120,11 +88,12 @@ ion-button {
   --padding-start: 0;
   --inner-padding-end: 0;
   margin-bottom: 12px;
-  border: none;
+  --border-style: none;
 }
 
 .datos-guardados ion-icon {
   font-size: 20px;
+  margin-right: 12px;
 }
 
 .datos-guardados ion-label {
@@ -135,4 +104,16 @@ ion-button {
 .datos-guardados strong {
   color: #e0e0e0;
   margin-right: 8px;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

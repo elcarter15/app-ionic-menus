@@ -1,6 +1,6 @@
 <!-- src/app/pages/informacion-personal/informacion-personal.page.html -->
 <!-- Autor: Yimi J. Cardozo R. -->
-<!-- Descripción: Página de información personal con estilo similar a Contacto -->
+<!-- Descripción: Formulario de información personal con toast centrado -->
 
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
@@ -15,7 +15,7 @@
   
   <div class="contenido-informacion">
     
-    <!-- Avatar igual que en Contacto -->
+    <!-- Avatar -->
     <ion-avatar class="avatar">
       <img src="https://ionicframework.com/docs/img/demos/avatar.svg" alt="Avatar">
     </ion-avatar>
@@ -23,7 +23,7 @@
     <h2>Mis Datos Personales</h2>
     <p>Completa tu información</p>
     
-    <!-- Formulario con el mismo estilo que la lista de contacto -->
+    <!-- Formulario -->
     <ion-list class="formulario-lista">
       
       <!-- Campo Nombre -->
@@ -32,14 +32,14 @@
         <ion-label position="stacked">Nombre completo</ion-label>
         <ion-input [(ngModel)]="nombre" placeholder="Escribe tu nombre"></ion-input>
       </ion-item>
-      
+
       <!-- Campo Edad -->
       <ion-item>
         <ion-icon name="calendar-outline" slot="start" color="secondary"></ion-icon>
         <ion-label position="stacked">Edad</ion-label>
         <ion-input type="number" [(ngModel)]="edad" placeholder="Tu edad"></ion-input>
       </ion-item>
-      
+
       <!-- Campo Correo -->
       <ion-item>
         <ion-icon name="mail-outline" slot="start" color="tertiary"></ion-icon>
@@ -49,20 +49,13 @@
       
     </ion-list>
 
-    <!-- Botón Guardar (igual que en Contacto) -->
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Guardar información</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-button expand="block" (click)="guardarInformacion()" color="primary">
-          <ion-icon name="save-outline" slot="start"></ion-icon>
-          Guardar datos
-        </ion-button>
-      </ion-card-content>
-    </ion-card>
+    <!-- Botón Guardar -->
+    <ion-button expand="block" (click)="guardarInformacion()" color="primary">
+      <ion-icon name="save-outline" slot="start"></ion-icon>
+      Guardar información
+    </ion-button>
 
-    <!-- Tarjeta para mostrar información guardada -->
+    <!-- Tarjeta de éxito (datos guardados) -->
     <ion-card *ngIf="mostrarDatosGuardados" class="info-guardada">
       <ion-card-header>
         <ion-card-title>✅ Información guardada</ion-card-title>
